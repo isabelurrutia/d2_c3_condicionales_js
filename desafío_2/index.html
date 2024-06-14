@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Desafío 2</title>
+</head>
+<body>
+    <h1>Puedes llevar hasta 10 stickers en total</h1>
+    <main>
+        <div>
+            <img src="./assets/img/sticker1.jpg" alt="gatita en charco de agua">
+            <input type="text" id="stick1">
+        </div>
+        <div>
+            <img src="./assets/img/sticker2.png" alt="gatita surfeando">
+            <input type="text" id="stick2">
+        </div>
+        <div>
+            <img src="./assets/img/sticker3.jpg" alt="gatita en la nieve">
+            <input type="text" id="stick3">
+        </div>
+    </main>
+    <p></p>
+    <button><span onclick="
+    let img1 = Number(document.querySelector('#stick1').value);
+    let img2 = Number(document.querySelector('#stick2').value);
+    let img3 = Number(document.querySelector('#stick3').value);
+    let suma = img1 + img2 + img3;
+    let mensaje = document.querySelector('p');
+    if (suma < 0){
+        mensaje.innerText = 'solo debes ingresar números enteros positivos, vuelve a intentarlo';
+    }
+    else if (suma <= 10){
+        mensaje.innerText = 'llevas '+suma+' stickers';
+    }
+    else{
+        mensaje.innerText = 'llevas demasiados stickers';
+    }
+    ">verificar</span></button>
+</body>
+</html>
