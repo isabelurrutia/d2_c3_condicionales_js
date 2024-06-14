@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+figure{
+    margin: 100px;
+    width: 480px;
+    height: 252px;
+    background-image: url("../assets/img/licanray.jpg");
+}
+.borde{
+    border: 2px solid red;
+}
