@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Desafío 3</title>
+</head>
+<body>
+    <main>
+        <h1>Ingresa el Password</h1>
+        <section>
+            <select name="primero" id="primero">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="segundo" id="segundo">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="tercero" id="tercero">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </section>
+        <button><span onclick="
+        let clave1 = document.querySelector('#primero').value;
+        let clave2 = document.querySelector('#segundo').value;
+        let clave3 = document.querySelector('#tercero').value;
+        let clave_maestra = clave1+clave2+clave3;
+        let mensaje = document.querySelector('p');
+        console.log(clave_maestra)
+        if (clave_maestra == 911){
+            mensaje.innerText = 'Password 1 CORRECTO';
+        }
+        else if (clave_maestra == 714){
+            mensaje.innerText = 'Password 2 CORRECTO';
+        }
+        else{
+            mensaje.innerText = 'Password INCORRECTO';
+        }     
+        ">Ingresar</span></button>
+        <p></p>
+    </main>
+</body>
+</html>

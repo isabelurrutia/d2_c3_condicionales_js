@@ -29,10 +29,7 @@
     let img3 = Number(document.querySelector('#stick3').value);
     let suma = img1 + img2 + img3;
     let mensaje = document.querySelector('p');
-    if (suma < 0){
-        mensaje.innerText = 'solo debes ingresar números enteros positivos, vuelve a intentarlo';
-    }
-    else if (suma <= 10){
+    if (suma <= 10){
         mensaje.innerText = 'llevas '+suma+' stickers';
     }
     else{
